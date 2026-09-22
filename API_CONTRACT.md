@@ -75,7 +75,7 @@ Membuat template onboarding baru.
 
 ## 2. Assign Template to Employees
 
-`POST /api/onboarding/assign`
+`POST /api/employees-onboarding /onboarding/assign`
 
 Assign template ke banyak karyawan sekaligus.
 
@@ -113,7 +113,7 @@ Assign template ke banyak karyawan sekaligus.
 
 ## 3. List Onboarding Employees
 
-`GET /api/onboarding/employees`
+`GET /api/employees-onboarding/employee_status_tab={status}&page={page}&limit={limit}`
 
 Mengambil data untuk tab `View Per Employee`.
 
