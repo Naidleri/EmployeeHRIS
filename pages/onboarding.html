@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding</title>
+  <link rel="stylesheet" href="css/onboarding.css">
+</head>
+<body>
+  <h1>Onboarding</h1>
+
+  <div class="tab-container">
+    <button class="tab-btn" data-tab="per_employee">View Per Employee</button>
+    <button class="tab-btn" data-tab="per_template">View Per Template</button>
+    <button class="tab-btn" data-tab="approval_required">Approval Required <span class="tab-badge" id="approval-count">0</span></button>
+  </div>
+
+  <div id="tab-content-container"></div>
+
+  <script src="js/onboarding.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new OnboardingTabs();
+    });
+  </script>
+</body>
+</html>

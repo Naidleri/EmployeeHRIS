@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Per Employee</title>
+</head>
+<body>
+
+  <div class="summary-cards">
+    <div class="summary-card" data-filter="in_progress">
+      <div class="summary-card__icon">⏳</div>
+      <div>
+        <div class="summary-card__count" id="count-in-progress">0</div>
+        <div class="summary-card__label">In Progress</div>
+      </div>
+    </div>
+    <div class="summary-card" data-filter="completed">
+      <div class="summary-card__icon">✅</div>
+      <div>
+        <div class="summary-card__count" id="count-completed">0</div>
+        <div class="summary-card__label">Completed</div>
+      </div>
+    </div>
+    <div class="summary-card" data-filter="ready">
+      <div class="summary-card__icon">🕐</div>
+      <div>
+        <div class="summary-card__count" id="count-ready">0</div>
+        <div class="summary-card__label">Ready</div>
+      </div>
+    </div>
+    <div class="summary-card active" data-filter="all">
+      <div class="summary-card__icon">👥</div>
+      <div>
+        <div class="summary-card__count" id="count-all">0</div>
+        <div class="summary-card__label">All Employees</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <div class="search-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input class="search-input" type="search" placeholder="Search employee here" id="search-input">
+    </div>
+    <button class="filter-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/>
+      </svg>
+      Filter
+    </button>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Employee Name</th>
+        <th>First Working Day</th>
+        <th>Nearest Deadline</th>
+        <th>Progress</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="employee-table-body"></tbody>
+  </table>
+
+  <div class="empty-state" id="empty-state" style="display:none">
+    <img src="assets/404.png" alt="No data">
+    <h3>No Employees Found</h3>
+    <p>No employees match your search.</p>
+  </div>
+
+</body>
+</html>

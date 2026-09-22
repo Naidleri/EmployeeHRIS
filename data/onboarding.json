@@ -1,0 +1,149 @@
+{
+  "templates": [
+    {
+      "id": "tmpl_001",
+      "template_name": "New Hire Onboarding",
+      "template_detail": "Template default untuk semua karyawan baru",
+      "reminders": [3, 7, 14],
+      "is_default": true,
+      "stages_count": 2,
+      "approval_workflow": "Default Onboarding Workflow",
+      "created_at": "2026-09-21T13:40:00Z",
+      "active_employee_count": 10,
+      "general_tasks": [{
+        "category_name": "Administrasi",
+        "tasks": [{
+          "type": "file",
+          "task_name": "Upload KTP",
+          "start": { "mode": "on_first_working_day" },
+          "deadline": { "mode": "first_working_day_plus_n", "n": 3 },
+          "assigned_to": "employee"
+        }]
+      }],
+      "specific_criteria_tasks": [{
+        "category_name": "Onboarding Finance",
+        "criteria": {
+          "employment_status": ["permanent", "contract"],
+          "branch": ["finance"],
+          "department": ["human_resources"],
+          "position": ["all"]
+        },
+        "tasks": [{
+          "type": "text",
+          "task_name": "Isi Nomor Rekening",
+          "start": { "mode": "anytime" },
+          "deadline": { "mode": "no_deadline" },
+          "assigned_to": "employee"
+        }]
+      }]
+    },
+    {
+      "id": "tmpl_002",
+      "template_name": "Finance Team Onboarding",
+      "template_detail": "Template untuk karyawan Finance",
+      "reminders": [3, 7],
+      "is_default": false,
+      "stages_count": 1,
+      "approval_workflow": "Default Onboarding Workflow",
+      "created_at": "2026-09-20T07:15:00Z",
+      "active_employee_count": 5,
+      "general_tasks": [],
+      "specific_criteria_tasks": []
+    }
+  ],
+  "summary": {
+    "in_progress": 0,
+    "completed": 0,
+    "ready": 0,
+    "all_employees": 5
+  },
+  "employees": [
+    {
+      "employee_id": "emp_001",
+      "employee_name": "Budi Santos",
+      "employee_code": "EMP-001",
+      "branch": "Headquarter",
+      "department": "Human Resources",
+      "first_working_day": "2026-08-02",
+      "nearest_deadline": null,
+      "status": "not_started",
+      "progress": { "completed_tasks": 0, "total_tasks": 6 }
+    },
+    {
+      "employee_id": "emp_002",
+      "employee_name": "Siti Rahma",
+      "employee_code": "EMP-002",
+      "branch": "Headquarter",
+      "department": "Human Resources",
+      "first_working_day": "2026-08-02",
+      "nearest_deadline": null,
+      "status": "not_started",
+      "progress": { "completed_tasks": 0, "total_tasks": 6 }
+    },
+    {
+      "employee_id": "emp_003",
+      "employee_name": "Dewi Lestari",
+      "employee_code": "EMP-003",
+      "branch": "Headquarter",
+      "department": "Human Resources",
+      "first_working_day": "2026-08-02",
+      "nearest_deadline": null,
+      "status": "not_started",
+      "progress": { "completed_tasks": 0, "total_tasks": 6 }
+    },
+    {
+      "employee_id": "emp_004",
+      "employee_name": "Top Tes",
+      "employee_code": "EMP-004",
+      "branch": "Finance",
+      "department": "Human Resources",
+      "first_working_day": "2026-07-24",
+      "nearest_deadline": null,
+      "status": "not_started",
+      "progress": { "completed_tasks": 0, "total_tasks": 6 }
+    },
+    {
+      "employee_id": "emp_005",
+      "employee_name": "Fajar Nugroho",
+      "employee_code": "EMP-005",
+      "branch": "Headquarter",
+      "department": "Human Resources",
+      "first_working_day": "2026-08-02",
+      "nearest_deadline": null,
+      "status": "not_started",
+      "progress": { "completed_tasks": 0, "total_tasks": 6 }
+    }
+  ],
+  "employee_tasks": {
+    "emp_001": {
+      "employee_id": "emp_001",
+      "employee_name": "Budi Santos",
+      "template_name": "New Hire Onboarding",
+      "first_working_day": "2026-08-02",
+      "categories": [{
+        "category_name": "Administrasi",
+        "tasks": [{
+          "task_id": "task_101",
+          "task_name": "Upload KTP",
+          "type": "file",
+          "status": "not_started",
+          "deadline": "2026-08-05",
+          "assigned_to": "employee",
+          "needs_approval": true,
+          "file_url": null
+        }]
+      }]
+    }
+  },
+  "approvals": {
+    "data": [{
+      "task_id": "task_101",
+      "employee_name": "Budi Santos",
+      "first_working_day": "2026-08-02",
+      "task_name": "Upload KTP",
+      "task_type": "file",
+      "deadline": "2026-08-05",
+      "file_url": "https://storage.kantorku.id/uploads/ktp_budi.pdf"
+    }]
+  }
+}

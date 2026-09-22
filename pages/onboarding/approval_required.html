@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval Required - Onboarding</title>
+</head>
+<body>
+    <div class="template-toolbar approval-toolbar">
+        <div class="search-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input class="search-input approval-search" type="search" placeholder="Search employee here">
+        </div>
+        <button class="filter-btn" type="button">Filter</button>
+    </div>
+
+    <table class="data-table approval-table">
+        <thead><tr><th>Employee Name</th><th>First Working Day</th><th>Task</th><th>Task Type</th><th>Deadline</th><th>Approval</th><th>Action</th></tr></thead>
+        <tbody id="approval-table-body"></tbody>
+    </table>
+
+    <div class="template-empty" id="approval-empty" hidden>
+        <img src="assets/404.png" alt="No Approval Required">
+        <h3>No Approval Required</h3>
+        <p>Approval tasks will appear here when they are submitted.</p>
+    </div>
+</body>
+</html>

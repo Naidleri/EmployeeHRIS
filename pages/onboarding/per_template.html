@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Template - Onboarding</title>
+</head>
+<body>
+    <div class="template-toolbar">
+        <div class="search-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input class="search-input template-search" type="search" placeholder="Search template here">
+        </div>
+        <button class="filter-btn" type="button">Filter</button>
+        <span class="toolbar-spacer"></span>
+        <button class="outline-action-btn" type="button">⇧&nbsp; Import/Export</button>
+        <button class="add-template-btn primary-action-btn" type="button">+&nbsp; Add Template</button>
+    </div>
+
+    <table class="data-table template-table">
+        <thead><tr><th>Template Name</th><th>Currently Active For</th><th>Stages</th><th>Approval</th><th>Last Updated</th><th>Action</th></tr></thead>
+        <tbody id="template-table-body"></tbody>
+    </table>
+
+    <div class="template-empty" id="template-empty" hidden>
+        <img src="assets/404.png" alt="No Templates Found">
+        <h3>No Templates Found</h3>
+        <p>Create a new template to get started.</p>
+    </div>
+    <div class="template-pagination"><span>Showing</span><select><option>10</option></select><span>from <strong id="template-total">0</strong> templates</span><button type="button">1</button><span>from 1 pages</span><button type="button">‹</button><button type="button">›</button></div>
+</body>
+</html>

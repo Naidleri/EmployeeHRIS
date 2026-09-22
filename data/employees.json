@@ -1,0 +1,105 @@
+{
+  "employees": [
+    {
+      "id": "EMP-001",
+      "initials": "BS",
+      "name": "Budi Santos",
+      "email": "budi.santos@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Headquarter",
+      "department": "Human Resources",
+      "joinDate": "02 Aug 2026",
+      "employmentType": "Contract",
+      "tab": "active"
+    },
+    {
+      "id": "EMP-002",
+      "initials": "SR",
+      "name": "Siti Rahma",
+      "email": "siti.rahma@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Headquarter",
+      "department": "Human Resources",
+      "joinDate": "02 Aug 2026",
+      "employmentType": "Permanent",
+      "tab": "active"
+    },
+    {
+      "id": "EMP-003",
+      "initials": "DL",
+      "name": "Dewi Lestari",
+      "email": "dewi.lestari@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Headquarter",
+      "department": "Human Resources",
+      "joinDate": "02 Aug 2026",
+      "employmentType": "Permanent",
+      "tab": "active"
+    },
+    {
+      "id": "EMP-004",
+      "initials": "TT",
+      "name": "Top Tes",
+      "email": "top.tes@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Finance",
+      "department": "Human Resources",
+      "joinDate": "24 Jul 2026",
+      "employmentType": "Permanent",
+      "tab": "active"
+    },
+    {
+      "id": "EMP-005",
+      "initials": "FN",
+      "name": "Fajar Nugroho",
+      "email": "fajar.nugroho@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Headquarter",
+      "department": "Human Resources",
+      "joinDate": "02 Aug 2026",
+      "employmentType": "Probation",
+      "tab": "active"
+    },
+    {
+      "id": "EMP-006",
+      "initials": "CJ",
+      "name": "Contoh John Doe",
+      "email": "john.doe@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Headquarter",
+      "department": "Human Resources",
+      "joinDate": "06 Jul 2026",
+      "employmentType": "Permanent",
+      "tab": "active"
+    },
+    {
+      "id": "300",
+      "initials": "T",
+      "name": "Tesssan",
+      "email": "tesssan@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Headquarter",
+      "department": "Human Resources",
+      "joinDate": "01 Sep 2026",
+      "employmentType": "Intern",
+      "tab": "active"
+    },
+    {
+      "id": "RES-001",
+      "initials": "AK",
+      "name": "Andi Kurniawan",
+      "email": "andi.k@kantorku.com",
+      "position": "Test Position XYZ",
+      "company": "Headquarter",
+      "department": "Engineering",
+      "joinDate": "10 Jan 2025",
+      "employmentType": "Permanent",
+      "tab": "resigned"
+    }
+  ],
+  "notifications": [
+    { "type": "warning", "count": 10, "bold": "employees", "message": "have not been assigned to onboarding template", "action": "Assign Now" },
+    { "type": "warning", "count": 1, "bold": "employees", "message": "data waiting to be completed.", "action": "Complete Now" },
+    { "type": "warning", "count": 2, "bold": "employees", "message": "employment will end in 30 days or less.", "action": "Review Now" }
+  ]
+}

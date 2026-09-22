@@ -1,0 +1,48 @@
+<section class="create-onboarding-page">
+  <div class="create-breadcrumb">Employees <span>›</span> Onboarding <span>›</span> <strong>Create Onboarding Template</strong></div>
+
+  <div class="create-steps">
+    <div class="create-step active" data-step="1"><span>1</span><strong>General Information</strong></div>
+    <div class="create-step" data-step="2"><span>2</span><strong>Task for Everyone</strong></div>
+    <div class="create-step" data-step="3"><span>3</span><strong>Task for<br>Employee with Certain Criteria</strong></div>
+  </div>
+
+  <form id="onboarding-create-form">
+    <section class="create-panel create-step-panel" data-panel="1">
+      <h2>Onboarding</h2>
+      <div class="create-field-row">
+        <label for="template-name">Template Name</label>
+        <div>
+          <input id="template-name" name="templateName" type="text" placeholder="e.g., New Hire Onboarding">
+          <small class="field-error" hidden>Template name is required</small>
+        </div>
+      </div>
+      <div class="create-field-row">
+        <label for="template-detail">Template Detail</label>
+        <textarea id="template-detail" name="templateDetail" placeholder="Add your description here"></textarea>
+      </div>
+      <div class="create-field-row">
+        <label>Reminder</label>
+        <div class="reminder-box">
+          <div id="reminder-list"></div>
+          <div class="reminder-actions"><button class="secondary-create-btn" id="add-reminder" type="button">+&nbsp; Add Reminder</button><span>Maximum of three reminders allowed</span></div>
+        </div>
+      </div>
+      <label class="default-template"><input type="checkbox" name="isDefault"> Set this template as default</label>
+    </section>
+
+    <section class="create-panel create-step-panel" data-panel="2" hidden>
+      <div class="task-step-layout">
+        <aside class="category-list"><div class="category-item active"><strong>1&nbsp; Category 1</strong><span>1 Task</span></div><button class="add-category-btn" type="button">+&nbsp; Add Category</button></aside>
+        <div class="category-content"><label>Category Name<input type="text" value="Category 1"></label><div class="task-heading"><strong>Tasks</strong><button class="secondary-create-btn add-task-row" type="button">+&nbsp; Add Task</button></div><div class="create-task-table"><div class="task-table-head"><span>Type</span><span>Task Name</span><span>Start</span><span>Deadline</span><span>Assigned To</span></div><div class="task-row"><select class="task-type"><option>Mark as done</option><option>Image</option><option>File</option><option>Text</option></select><input value="Complete employee profile" placeholder="Task name"><select><option>On first working day</option><option>Anytime</option><option>First working day + N</option><option>After completing another task</option></select><select><option>No deadline</option><option>Before first working day</option><option>On first working day</option><option>First working day + N</option></select><select><option>Employee</option><option>Manager</option></select></div></div></div>
+      </div>
+    </section>
+
+    <section class="create-panel create-step-panel" data-panel="3" hidden>
+      <h2>Specific Categories</h2>
+      <div class="criteria-empty"><div class="criteria-icon">◎</div><p>Create Target Group to review employees of a specific <strong>branch, department,</strong> or <strong>position</strong> (optional)</p><button class="outline-create-btn" type="button">+&nbsp; Add Specific Category</button></div>
+    </section>
+
+    <div class="create-footer"><button class="text-create-btn" id="create-cancel" type="button">Cancel</button><button class="text-create-btn" id="create-back" type="button" hidden>Back</button><button class="primary-create-btn" id="create-next" type="button">Next</button></div>
+  </form>
+</section>
